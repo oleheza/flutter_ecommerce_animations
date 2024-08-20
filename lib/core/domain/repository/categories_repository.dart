@@ -1,6 +1,6 @@
 import '../model/category_model.dart';
 
-abstract class CategoriesRepository {
+abstract interface class CategoriesRepository {
   Future<List<CategoryModel>> getAll();
 
   Future<List<CategoryModel>> getAllAvailable();

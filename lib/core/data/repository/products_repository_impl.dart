@@ -6,7 +6,7 @@ import '../../domain/model/product_model.dart';
 import '../../domain/repository/products_repository.dart';
 
 @Injectable(as: ProductsRepository)
-class ProductsRepositoryImpl extends ProductsRepository {
+class ProductsRepositoryImpl implements ProductsRepository {
   static const _collectionName = 'products';
 
   final CollectionReference _collectionReference;

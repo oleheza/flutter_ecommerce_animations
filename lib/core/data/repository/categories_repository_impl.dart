@@ -6,7 +6,7 @@ import '../../domain/model/category_model.dart';
 import '../../domain/repository/categories_repository.dart';
 
 @Injectable(as: CategoriesRepository)
-class CategoriesRepositoryImpl extends CategoriesRepository {
+class CategoriesRepositoryImpl implements CategoriesRepository {
   static const _categoriesCollectionPath = 'categories';
 
   final CollectionReference _collection;
